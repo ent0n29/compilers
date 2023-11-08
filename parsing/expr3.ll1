@@ -1,0 +1,8 @@
+F : 'number'
+F : '(' E ')'
+Y : '*' F Y
+Y : EPS
+T : F Y
+B : '+' T B
+B : EPS
+E : T B

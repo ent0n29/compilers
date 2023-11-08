@@ -1,0 +1,26 @@
+La cartella contiene il software per creare un parser predittivo
+a partire dalle grammatiche LL(1) presenti in un file con estensione ll1 
+La compilazione deve essere fatta usando lo script set_grammar.sh (il quale a sua volta usa Makefile)
+
+Esempio:
+./set_grammar.sh expr3.ll1
+
+Il software usa flex per implementare il lexer
+I due programmi first_and_follow.py e makeparser.py sono una
+forma molto semplice di strumento per costruire parser LL(1)
+in modo semiautomatico. Più avanti, vedremo con bison uno strumento
+molto più maturo e completo.
+Per quanto primitivi, gli strumenti qui presenti (la cui struttura
+può del tutto essere ignorata) consentono quindi di scrivere
+un parser usando solo la grammatica (e il lessico).
+I due passi sono elencati di seguito.
+
+1) Scrivere il file con la grammatica (estensione ll1)
+2) Scrivere il file per il lexer per il riconoscimento dei token
+   (lexer_<grammar_name>.l) 
+
+I file presenti sono sufficienti per comprendere come scrivere i file di cui
+ai punti 1 e 2
+
+Per semplici esempi, il file symbtbl.h (che definisce una semplicissima symbol table)
+può essere utilizzato nella forma corrente

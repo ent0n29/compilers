@@ -1,0 +1,27 @@
+numexpr : 'number'
+parexpr : '(' expr ')'
+idexpr : 'id'
+idexpr : 'funid' '(' exprlist ')'
+optexpr : exprlist
+optexpr : EPS
+exprlist : expr 
+exprlist : expr ',' exprlist
+primary : idexpr
+primary : numexpr
+primary : parexpr
+binoprhs : binop primary binoprhs
+binoprhs : EPS
+binop : '+'
+binop : '*'
+expr : primary binoprhs
+proto : 'funid' '(' exprlist ')'
+idseq : 'id' idseq
+idseq : EPS
+def : 'def' proto exprlist
+external : 'extern' proto
+top : def
+top : external
+top : expr
+top : EPS
+program : top ';' program
+program : EPS

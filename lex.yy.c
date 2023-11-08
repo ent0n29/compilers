@@ -444,8 +444,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "simpleTok.l"
-#line 2 "simpleTok.l"
+#line 1 "simpleTokenizer.l"
+#line 2 "simpleTokenizer.l"
 #include <iostream>
 using namespace std;
 #line 452 "lex.yy.c"
@@ -667,7 +667,7 @@ YY_DECL
 		}
 
 	{
-#line 12 "simpleTok.l"
+#line 12 "simpleTokenizer.l"
 
 #line 673 "lex.yy.c"
 
@@ -728,32 +728,32 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 13 "simpleTok.l"
+#line 13 "simpleTokenizer.l"
 { cout << "        operatore <" << yytext[0] << ">" << endl; }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 14 "simpleTok.l"
+#line 14 "simpleTokenizer.l"
 { cout << "        operatore <" << yytext[0] << ">" << endl; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 15 "simpleTok.l"
+#line 15 "simpleTokenizer.l"
 { cout << "        operatore <" << yytext[0] << ">" << endl; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 16 "simpleTok.l"
+#line 16 "simpleTokenizer.l"
 { cout << "           numero <" << yytext    << ">" << endl; }
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 17 "simpleTok.l"
+#line 17 "simpleTokenizer.l"
 { cout << "Token sconosciuto <" << yytext[0] << ">" << endl; }
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 18 "simpleTok.l"
+#line 18 "simpleTokenizer.l"
 ECHO;
 	YY_BREAK
 #line 760 "lex.yy.c"
@@ -1761,7 +1761,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 18 "simpleTok.l"
+#line 18 "simpleTokenizer.l"
 
 int main(int argc, char** argv) {
     FlexLexer* lexer = new yyFlexLexer;
