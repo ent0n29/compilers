@@ -3,7 +3,7 @@
 all: pparser
 
 pparser: pparser.o lexer.o
-	g++ -o new_parser pparser.o lexer.o
+	g++ -o pparser pparser.o lexer.o
 
 pparser.o: pparser.hpp pparser.cpp tokens.h
 	g++ -c pparser.cpp
