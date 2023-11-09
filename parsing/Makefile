@@ -3,13 +3,13 @@
 all: pparser
 
 pparser: pparser.o lexer.o
-	clang++ -o pparser pparser.o lexer.o
+	g++ -o new_parser pparser.o lexer.o
 
 pparser.o: pparser.hpp pparser.cpp tokens.h
-	clang++ -c pparser.cpp
+	g++ -c pparser.cpp
 
 lexer.o: lexer.cpp tokens.h
-	clang++ -c lexer.cpp
+	g++ -c lexer.cpp
 
 lexer.cpp: lexer.l
 	flex++ -o lexer.cpp lexer.l
