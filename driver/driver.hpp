@@ -20,7 +20,7 @@ const lexval NONE = 0.0;
 // gli elementi del programma
 class RootAST {
 public:
-  virtual ~RootAST() {};
+  virtual ~RootAST() {}; // Distruttore
   virtual RootAST *left() {return nullptr;};
   virtual RootAST *right() {return nullptr;};
   virtual lexval getLexVal() {return NONE;};
