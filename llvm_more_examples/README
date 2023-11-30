@@ -7,7 +7,7 @@ Per avere il file ll si può quindi digitare
 
 /*=========ESEMPIO 1============*/
 /*   grammatica relativa a	*/
-/*   morecomplex.k		*/
+/*       morecomplex.k		*/
 /*==============================*/
 
 $ make  -> ottengo kcomp			(executable)
@@ -17,5 +17,18 @@ $ llc morecomplex.bc				(out morecomplex.s)
 $ gcc -c morecomplex.s -o morecomplex.o 	(out morecomplex.o)
 $ clang++ -o morecomplex rw.o morecomplex.o	(link con rw.o)
 $ ./morecomplex					(ottenuto eseguibile)
+
+#note: to obtain *.o files -> $ gcc -c filename.cpp
  
-  
+/*=========ESEMPIO 1============*/
+/*   grammatica relativa a      */
+/*   	       F.k              */
+/*==============================*/  
+
+$ make  -> ottengo kcomp                        (executable)
+$ ./kcomp F.k 2> F.ll       			(output su stderr)
+$ llvm-as F.ll                        		(out F.bc)
+$ llc F.bc                            		(out F.s)
+$ gcc -c F.s -o F.o         			(out F.o)
+$ clang++ -o callF1 callF1.o F.o     		(link con callF1.o)
+$ ./morecomplex                                 (ottenuto eseguibile)
