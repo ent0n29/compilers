@@ -20,7 +20,7 @@ $ ./morecomplex					(ottenuto eseguibile)
 
 #note: to obtain *.o files -> $ gcc -c filename.cpp
  
-/*=========ESEMPIO 1============*/
+/*=========ESEMPIO 2============*/
 /*   grammatica relativa a      */
 /*   	       F.k              */
 /*==============================*/  
