@@ -1,0 +1,6 @@
+Versione relativa alla grammatica 1.0 
+Prodotto l'eseguibile, il comando
+./kcomp fn.k 
+(dove fn indica chiaramente il solo filename) scrive l'output su stderr.
+Per avere il file ll si può quindi digitare
+./kcomp fn.k 2> fn.ll
