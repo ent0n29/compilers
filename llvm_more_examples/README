@@ -1,6 +1,21 @@
 Versione relativa alla grammatica 1.0 
 Prodotto l'eseguibile, il comando
-./kcomp fn.k 
-(dove fn indica chiaramente il solo filename) scrive l'output su stderr.
+./kcomp F.k 
+(dove F indica chiaramente il solo filename) scrive l'output su stderr.
 Per avere il file ll si può quindi digitare
-./kcomp fn.k 2> fn.ll
+./kcomp F.k 2> F.ll
+
+/*=========ESEMPIO 1============*/
+/*   grammatica relativa a	*/
+/*   morecomplex.k		*/
+/*==============================*/
+
+$ make  -> ottengo kcomp			(executable)
+$ ./kcomp morecomplex.k 2> morecomplex.ll 	(output su stderr)
+$ llvm-as morecomplex.ll			(out morecomplex.bc)
+$ llc morecomplex.bc				(out morecomplex.s)
+$ gcc -c morecomplex.s -o morecomplex.o 	(out morecomplex.o)
+$ clang++ -o morecomplex rw.o morecomplex.o	(link con rw.o)
+$ ./morecomplex					(ottenuto eseguibile)
+ 
+  
