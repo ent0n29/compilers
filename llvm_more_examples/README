@@ -6,7 +6,7 @@ Per avere il file ll si può quindi digitare
 ./kcomp F.k 2> F.ll
 
 /*=========ESEMPIO 1============*/
-/*   grammatica relativa a	*/
+/*    grammatica relativa a	*/
 /*       morecomplex.k		*/
 /*==============================*/
 
@@ -21,7 +21,7 @@ $ ./morecomplex					(ottenuto eseguibile)
 #note: to obtain *.o files -> $ gcc -c filename.cpp
  
 /*=========ESEMPIO 2============*/
-/*   grammatica relativa a      */
+/*    grammatica relativa a     */
 /*   	       F.k              */
 /*==============================*/  
 
